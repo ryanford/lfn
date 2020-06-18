@@ -1,0 +1,5 @@
+ROOT = $(TUP_CWD)
+DIST = $(ROOT)/dist
+SRC = $(ROOT)/src
+
+!minify = |> ^ minify^esbuild --minify --outfile=%o %f |>

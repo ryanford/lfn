@@ -1,0 +1,1 @@
+export const l=(d,b,...f)=>{const e=[];let c;d==="svg"?c=document.createElementNS("http://www.w3.org/2000/svg",d):c=document.createElement(d);if(typeof b==="object")for(const a in b)c.setAttribute(a,b[a]);else b&&(e[0]=b);return e.push(...f),e.forEach(a=>{const g=typeof a==="string"?"createTextNode":"createElement";c.appendChild(a instanceof Node?a:document[g](a))}),c};

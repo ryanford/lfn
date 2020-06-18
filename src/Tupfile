@@ -1,0 +1,4 @@
+include_rules
+
+: foreach *.js |> !minify |> $(DIST)/%f
+: README.md | ../dist/elfn.js |> lua ../genmd.lua |> $(ROOT)/%f
