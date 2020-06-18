@@ -13,7 +13,7 @@ l(tagname, [props [, children]]);
 #### Examples:
 
 ```js
-import { l } from "elfn.js";
+import { l } from "lfn.js";
 
 // only tagname
 const div = l("div");
