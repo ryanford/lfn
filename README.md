@@ -31,4 +31,15 @@ const buttons = l(
 	l("button", { id: "btn_one" }),
 	l("button", { id: "btn_two" })
 );
+
+// orphan tags (rendered as a document fragment)
+const fragment = l(
+	l("style", `
+		:host {
+			display: block;
+			content: contain;
+		}
+	`),
+	l("div", "hello world")
+);
 ```
