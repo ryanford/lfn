@@ -7,7 +7,7 @@ Small (373b) helper function to make working with HTML in JS a little easier.
 #### Usage:
 
 ```js
-l(tagname, [props [, children]]);
+l(tagname, [props [, ...children]]);
 ```
 
 #### Examples:
@@ -25,5 +25,10 @@ const heading = l("h1", "hello", " world");
 const input = l("input", { name: "name" });
 
 // tag, props and children
-const buttons = l("div", { style: "display: flex; " } l("button", { id: "btn_one" }), l("button", { id: "btn_two" }));
+const buttons = l(
+	"div",
+	{ style: "display: flex; " },
+	l("button", { id: "btn_one" }),
+	l("button", { id: "btn_two" })
+);
 ```
